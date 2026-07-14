@@ -32,7 +32,45 @@ footer {
 /* ===========================================
    Team Members Styles (Person A)
    =========================================== */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
 
+.member-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+}
+
+.member-avatar {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.member-card h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.member-card .role {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.member-card .bio {
+    color: #666;
+    font-size: 14px;
+}
 
 /* ===========================================
    Skills Section Styles (Person B)
