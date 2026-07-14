@@ -37,7 +37,34 @@ footer {
 /* ===========================================
    Skills Section Styles (Person B)
    =========================================== */
+.skills-container {
+    margin-top: 20px;
+}
 
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.skill-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
 
 /* ===========================================
    Projects Section Styles (Person C)
