@@ -97,4 +97,70 @@ footer {
 /* ===========================================
    Contact Form Styles (Person D)
    =========================================== */
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.submit-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #218838;
+}
+
+.form-status {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.form-status.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.form-status.error {
+    background: #f8d7da;
+    color: #721c24;
+}
 
