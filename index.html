@@ -112,11 +112,15 @@
             <form id="contact-form" class="contact-form">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Your name">
+                    <input type="text" id="name" name="name" required minlength="2" maxlength="60" pattern="[A-Za-z\s'-]+" autocomplete="name" placeholder="Your name" title="Use letters, spaces, apostrophes, and hyphens only.">
+                    <small class="field-hint">2-60 characters. Letters and spaces only.</small>
+                    <small id="name-error" class="field-error" aria-live="polite"></small>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    <input type="email" id="email" name="email" required maxlength="120" autocomplete="email" placeholder="your@email.com">
+                    <small class="field-hint">Use a valid email format, for example name@example.com.</small>
+                    <small id="email-error" class="field-error" aria-live="polite"></small>
                 </div>
                 <div class="form-group">
                     <label for="subject">Subject</label>
@@ -126,14 +130,17 @@
                         <option value="project">Project Collaboration</option>
                         <option value="feedback">Feedback</option>
                     </select>
+                    <small id="subject-error" class="field-error" aria-live="polite"></small>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+                    <textarea id="message" name="message" rows="5" required minlength="15" maxlength="1000" placeholder="Your message..."></textarea>
+                    <small class="field-hint"><span id="message-count">0</span>/1000 characters</small>
+                    <small id="message-error" class="field-error" aria-live="polite"></small>
                 </div>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
-            <div id="form-status" class="form-status"></div>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
         </section>
     </main>
 
